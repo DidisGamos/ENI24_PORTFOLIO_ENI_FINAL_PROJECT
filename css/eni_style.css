@@ -310,14 +310,18 @@ header nav ul a:hover::after{
     height: 50px;
     width: 400px;
     padding: 20px;
+    outline: none;
 }
 .com-bx .email {
     height: 50px;
     width: 400px;
     padding: 20px;
+    outline: none;
 }
 .com-bx .comment {
     padding: 20px;
+    outline: none;
+    font-family: arial;
 }
 .com-bx .btn-bx{
     height: 40px;
