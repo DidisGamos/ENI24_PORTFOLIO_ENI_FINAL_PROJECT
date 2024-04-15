@@ -125,6 +125,28 @@ header nav ul a:hover::after{
     display: flex;
     justify-content: start;
 }
+#sec-bx-1 .info-bx-2 #bx-btn{
+    margin-top: 10px;
+    width: 100%;
+}
+#sec-bx-1 .info-bx-2 #bx-btn button{
+    width: 150px;
+    height: 40px;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+    border: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+#sec-bx-1 .info-bx-2 #bx-btn button:hover{
+    background: none;
+    color: black;
+    border: 2px solid black;
+}
 
 /* Section bx-2 */
 #sec-bx-2{
