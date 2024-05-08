@@ -195,9 +195,10 @@ header nav ul a:hover::after{
     justify-content: center;
     align-items: center;
     padding: 25px;
-    box-shadow: 0 0 2px black;
+    box-shadow: 0 0 5px black;
+    border: none;
     border-radius: 20px;
-    width: 220px;
+    width: 230px;
     height: 270px;
 }
 #sec-bx-2 .head-bx .bx-ms-1 i{
