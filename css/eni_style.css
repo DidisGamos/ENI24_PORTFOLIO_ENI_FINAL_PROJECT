@@ -407,19 +407,12 @@ header nav ul a:hover::after{
 #sec-bx-5{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
     margin-left: 180px;
     margin-right: 180px;
-}
-#sec-bx-5 .ic-info a{
-    margin: 10px;
-}
-#sec-bx-5 .ic-info i{
-    font-size: 30px;
-    color: black;
 }
 
 /* Responsive Design */
@@ -561,7 +554,6 @@ header nav ul a:hover::after{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column-reverse;
         gap: 20px;
         margin: 20px;
         padding: 20px;
