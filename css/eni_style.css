@@ -414,6 +414,11 @@ header nav ul a:hover::after{
     margin-left: 180px;
     margin-right: 180px;
 }
+#sec-bx-5 .copy p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 /* Responsive Design */
 
