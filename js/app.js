@@ -1,14 +1,12 @@
-let lastScrollTop = 0;
-window.addEventListener('scroll', function() {
-    var header = document.getElementById('header');
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// SCROLL HEADER
 
-    if (scrollTop > lastScrollTop) {
-        // Downscroll
-        header.style.transform = 'translateY(-100%)';
-    } else {
-        // Upscroll
-        header.style.transform = 'translateY(0)';
-    }
-    lastScrollTop = scrollTop;
-});
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector('header').style.top = "0";
+  } else {
+    document.querySelector('header').style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}

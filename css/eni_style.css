@@ -24,23 +24,23 @@ body{
 /* Navigation */
 header{
     position: fixed;
+    top: 0;
     width: 100%;
-    height: auto;
+    height: 60px;
     text-align: center;
     transition: 0.5s;
-    backdrop-filter: blur(5px);
+    background-color: white;
     box-shadow: 0 0 20px rgb(63, 63, 63);
-    transition: all 0.5s ease-in-out;
+    transition: top 0.3s;
 }
 header .nav-bx{
     display: flex;
     justify-content: space-around;
-    height: 100px;
     width: 100%;
     position: relative;
 }
 header .bx-1{
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 30px;
     font-weight: bold;
     font-family: roboto;
@@ -49,7 +49,7 @@ header nav li{
     display: inline;
 }
 header nav ul{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 header nav ul a{
     position: relative;
@@ -80,7 +80,7 @@ header nav ul a:hover::after{
     font-size: 30px;
     float: right;
     line-height: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: pointer;
     display: none;
 }
