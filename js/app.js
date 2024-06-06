@@ -10,3 +10,21 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+// // FADE UP
+
+document.addEventListener("DOMContentLoaded", function() {
+    const textElement = document.querySelector('.bloc-bx');
+    setTimeout(() => {
+        textElement.classList.add('visible');
+    }, 100);
+});
+
+// //FADE LEFT
+
+document.addEventListener("DOMContentLoaded", function() {
+    const textElement = document.querySelector('.logo-bx')
+    setTimeout(() => {
+        textElement.classList.add('visible');
+    }, 100);
+});
