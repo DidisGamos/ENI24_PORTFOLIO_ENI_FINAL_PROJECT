@@ -59,6 +59,9 @@ header nav ul a{
     color: black;
     transition: all 0.5s ease-in-out;
 }
+header nav ul a:hover{
+    color: #41cd52;
+}
 header nav ul a::after{
     content: "";
     position: absolute;
@@ -67,12 +70,12 @@ header nav ul a::after{
     width: 0;
     height: 2px;
     border-radius: 50px;
-    background: black;
+    background: #41cd52;
     transition: all 0.5s ease-in-out;
 }
 header nav ul a:hover::after{
     width: 100%;
-    background: black;
+    background: #41cd52;
 }
 
 .check-bx{
@@ -145,12 +148,12 @@ header nav ul a:hover::after{
     cursor: pointer;
     background-color: #41cd52;
     border: none;
-    border-radius: 5px 20px 5px 20px;
+    border-radius: 2px 16px 2px 16px;
     color: white;
     transition: all 0.5s ease-in-out;
 }
 #sec-bx-1 .info-bx-2 #bx-btn button:hover{
-    box-shadow: #41cd52;
+    box-shadow: 0 0 20px #41cd52;
 }
 
 /* Section bx-2 */
@@ -169,7 +172,7 @@ header nav ul a:hover::after{
     content: "";
     height: 1px;
     width: 100%;
-    background-color: black;
+    background-color: #41cd52;
     display: block;
 }
 #sec-bx-2 .bx-ms p{
@@ -178,7 +181,7 @@ header nav ul a:hover::after{
     align-items: center;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: #41cd52;
     width: 400px;
     padding: 10px;
     border-radius: 50px;
@@ -198,14 +201,20 @@ header nav ul a:hover::after{
     align-items: center;
     padding: 25px;
     box-shadow: 0 0 5px black;
+    background-color: white;
     border: none;
     border-radius: 20px;
     width: 230px;
     height: 270px;
+    transition: all 0.5s ease-in-out;
+}
+#sec-bx-2 .head-bx .bx-ms-1:hover{
+    box-shadow: 0 0 20px #41cd52;
 }
 #sec-bx-2 .head-bx .bx-ms-1 i{
     font-size: 30px;
     padding-bottom: 15px;
+    color: black;
 }
 
 /* section bx-3 */
@@ -221,7 +230,7 @@ header nav ul a:hover::after{
     content: "";
     height: 1px;
     width: 100%;
-    background-color: black;
+    background-color: #41cd52;
     display: block;
 }
 #sec-bx-3 .p-bx p{
@@ -229,7 +238,7 @@ header nav ul a:hover::after{
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: black;
+    background-color: #41cd52;
     width: 400px;
     padding: 10px;
     border-radius: 50px;
@@ -281,7 +290,7 @@ header nav ul a:hover::after{
     content: "";
     height: 1px;
     width: 100%;
-    background-color: black;
+    background-color: #41cd52;
     display: block;
 }
 #sec-bx-4 .cont-bx p{
@@ -289,7 +298,7 @@ header nav ul a:hover::after{
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: black;
+    background-color: #41cd52;
     width: 400px;
     padding: 10px;
     border-radius: 50px;
@@ -333,13 +342,15 @@ header nav ul a:hover::after{
     height: 40px;
     width: 90px;
     background: transparent;
+    color: #41cd52;
+    border: 2px solid #41cd52;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.5s ease-in-out;
 }
 .com-bx .btn-bx:hover{
     color: white;
-    background-color: black;
+    background-color: #41cd52;
     border: none;
 }
 
@@ -368,15 +379,13 @@ header nav ul a:hover::after{
     width: 50px;
     font-size: 20px;
     color: white;
-    background: #000;
+    background: #41cd52;
     border-radius: 50px;
     margin: 5px;
     transition: all 0.5s ease-in-out;
 }
 .list-ico i:hover{
-    border: 2px solid black;
-    background: none;
-    color: black;
+    box-shadow: 0 0 15px #41cd52;
 }
 
 
