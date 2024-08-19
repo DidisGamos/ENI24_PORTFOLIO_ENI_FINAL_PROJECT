@@ -49,7 +49,7 @@ header{
     text-align: center;
     transition: 0.5s;
     background-color: white;
-    box-shadow: 0 0 20px rgb(63, 63, 63);
+    box-shadow: 0 0 20px #41cd52;
     transition: top 0.3s;
 }
 header .nav-bx{
@@ -174,7 +174,6 @@ header nav ul a:hover::after{
 #sec-bx-1 .info-bx-2 #bx-btn button:hover{
     box-shadow: 0 0 20px #41cd52;
 }
-
 /* Section bx-2 */
 #sec-bx-2{
     height: auto;
