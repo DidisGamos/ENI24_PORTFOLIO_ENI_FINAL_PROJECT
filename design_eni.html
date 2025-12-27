@@ -1,190 +1,343 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/eni_style.css">
-    <title>Portfolio ENI | ENI 2024</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio ENI 2024 — École Nationale de l’Informatique : missions, parcours, galerie du campus et contacts.">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/eni_style.css">
+  <title>Portfolio ENI | ENI 2024</title>
 </head>
 <body>
-    <header>
-        <div class="nav-bx">
-            <div class="bx-1">
-                <p>ENI</p>
-            </div>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="check-bx">
-                    <i class="fas fa-bars open"></i>
-                    <i class="fa-solid fa-xmark close"></i>
-                </label>
-                <ul>
-                    <li><a href="#sec-bx-1">Accueil</a></li>
-                    <li><a href="#sec-bx-2">Missions/Objectifs</a></li>
-                    <li><a href="#sec-bx-3">Particularités</a></li>
-                    <li><a href="#sec-bx-4">Contacts</a></li>
-                </ul>
-            </nav>
+  <a class="skip-link" href="#home">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#home" aria-label="ENI - Accueil">
+        <img src="images/eni-logo.b647799890130ce38bc4.png" alt="Logo de l’ENI" class="brand-logo">
+        <span class="brand-text">ENI</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navigation principale">
+        <input type="checkbox" id="check" aria-label="Ouvrir/Fermer le menu">
+        <label for="check" class="nav-toggle" aria-label="Menu">
+          <i class="fas fa-bars open"></i>
+          <i class="fa-solid fa-xmark close"></i>
+        </label>
+        <ul class="nav-list">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#features">Points forts</a></li>
+          <li><a href="#programs">Programmes</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary header-cta" href="#contact">Nous contacter</a>
+    </div>
+  </header>
+
+  <div class="ar-bx">
+    <a href="#home" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy js-reveal">
+        <span class="badge">ENI • 2024</span>
+        <h1>École Nationale de l’Informatique</h1>
+        <p class="lead">
+          École Ingénieuse, la pépinière des élites informaticiennes — former des talents créatifs,
+          éthiques et prêts pour un monde numérique en constante évolution.
+        </p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary" id="learn-more">Découvrir</button>
+          <a class="btn btn-ghost" href="https://eni.mg/" target="_blank" rel="noopener noreferrer">Site officiel</a>
         </div>
-    </header>
-    <div class="ar-bx">
-        <a href="#sec-bx-1"><i class="fa-solid fa-arrow-up"></i></a>
+        <div class="brand-strip js-reveal" aria-label="Partenaires / Références (illustratif)">
+          <span class="chip">Université ENI</span>
+          <span class="chip">Fianarantsoa</span>
+          <span class="chip">Toliara</span>
+          <span class="chip">Innovation</span>
+        </div>
+      </div>
+
+      <div class="hero-media js-reveal" aria-label="Illustration du campus">
+        <div class="hero-card">
+          <img src="images/pic_1.jpg" alt="Vue du campus ENI" loading="eager">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div class="section-head js-reveal">
+        <span class="kicker">À propos</span>
+        <h2>Former pour l’excellence et l’impact</h2>
+        <p>
+          Notre mission est de former une génération de professionnels de l’informatique créatifs et éthiques.
+          Nous contribuons au développement durable de Madagascar via une éducation de qualité qui transcende les frontières.
+        </p>
+      </div>
+
+      <div class="about-cards js-reveal">
+        <div class="card">
+          <div class="card-ico"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Mission</h3>
+          <p>Former des professionnels prêts à exceller dans un monde numérique en évolution constante.</p>
+        </div>
+        <div class="card">
+          <div class="card-ico"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Engagement</h3>
+          <p>Offrir une éducation inclusive et dynamique, tournée vers l’innovation.</p>
+        </div>
+        <div class="card">
+          <div class="card-ico"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Vision</h3>
+          <p>Être un centre d’excellence en informatique et former des leaders influents.</p>
+        </div>
+        <div class="card">
+          <div class="card-ico"><i class="fa-solid fa-globe"></i></div>
+          <h3>Impact</h3>
+          <p>Contribuer au progrès socio-économique de la nation et du monde.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section section-soft">
+    <div class="container">
+      <div class="center-head js-reveal">
+        <span class="kicker">Points forts</span>
+        <h2>Une expérience d’apprentissage moderne</h2>
+        <p>Un cadre clair, des parcours solides et un accompagnement vers les métiers du numérique.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature card js-reveal">
+          <div class="card-ico"><i class="fa-solid fa-code"></i></div>
+          <h3>Pratique</h3>
+          <p>Approche orientée projets pour apprendre en construisant.</p>
+        </div>
+        <div class="feature card js-reveal">
+          <div class="card-ico"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Réseaux</h3>
+          <p>Compétences systèmes & réseaux adaptées aux besoins du terrain.</p>
+        </div>
+        <div class="feature card js-reveal">
+          <div class="card-ico"><i class="fa-solid fa-database"></i></div>
+          <h3>Données</h3>
+          <p>Base de données & génie logiciel pour des applications robustes.</p>
+        </div>
+        <div class="feature card js-reveal">
+          <div class="card-ico"><i class="fa-solid fa-robot"></i></div>
+          <h3>IA</h3>
+          <p>Découverte de l’intelligence artificielle et de ses usages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="section">
+    <div class="container">
+      <div class="center-head js-reveal">
+        <span class="kicker">Programmes</span>
+        <h2>Mention & parcours</h2>
+        <p>La Licence Professionnelle en Informatique à l’ENI propose plusieurs parcours de formation.</p>
+      </div>
+
+      <div class="program-list">
+        <article class="program js-reveal">
+          <div class="program-copy">
+            <span class="pill">Parcours 01</span>
+            <h3>Génie Logiciel & Base de Données</h3>
+            <p>Conception, architecture, qualité logicielle, bases de données et applications web.</p>
+            <ul class="checklist">
+              <li>Analyse & conception</li>
+              <li>Développement web</li>
+              <li>SQL & modélisation</li>
+            </ul>
+          </div>
+          <div class="program-media">
+            <img src="images/pic_2.jpg" alt="Étudiants et travaux pratiques" loading="lazy">
+          </div>
+        </article>
+
+        <article class="program reverse js-reveal">
+          <div class="program-copy">
+            <span class="pill">Parcours 02</span>
+            <h3>Administration Systèmes & Réseaux</h3>
+            <p>Infrastructure, sécurité, supervision, services réseau et bonnes pratiques.</p>
+            <ul class="checklist">
+              <li>Linux & services</li>
+              <li>Réseaux & sécurité</li>
+              <li>Administration</li>
+            </ul>
+          </div>
+          <div class="program-media">
+            <img src="images/pic_3.jpg" alt="Salle de cours et activités" loading="lazy">
+          </div>
+        </article>
+
+        <article class="program js-reveal">
+          <div class="program-copy">
+            <span class="pill">Parcours 03</span>
+            <h3>Informatique Générale & IA</h3>
+            <p>Fondamentaux, algorithmique, systèmes, web et initiation à l’intelligence artificielle.</p>
+            <ul class="checklist">
+              <li>Algorithmique</li>
+              <li>Fondamentaux systèmes</li>
+              <li>Initiation IA</li>
+            </ul>
+          </div>
+          <div class="program-media">
+            <img src="images/pic_4.jpg" alt="Campus et vie étudiante" loading="lazy">
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section section-soft" aria-label="Indicateurs (illustratifs)">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat js-reveal">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Parcours</div>
+        </div>
+        <div class="stat js-reveal">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Centres (Fianarantsoa, Toliara)</div>
+        </div>
+        <div class="stat js-reveal">
+          <div class="stat-num">9+</div>
+          <div class="stat-label">Métiers associés</div>
+        </div>
+        <div class="stat js-reveal">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Opportunités</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="center-head js-reveal">
+        <span class="kicker">Galerie</span>
+        <h2>Notre établissement en images</h2>
+        <p>Une sélection de photos de l’ENI.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card js-reveal">
+          <img src="images/pic_1.jpg" alt="ENI — vue de l'établissement (1)" loading="lazy">
+        </figure>
+        <figure class="gallery-card js-reveal">
+          <img src="images/pic_2.jpg" alt="ENI — vue de l'établissement (2)" loading="lazy">
+        </figure>
+        <figure class="gallery-card js-reveal">
+          <img src="images/pic_3.jpg" alt="ENI — vue de l'établissement (3)" loading="lazy">
+        </figure>
+        <figure class="gallery-card js-reveal">
+          <img src="images/pic_4.jpg" alt="ENI — vue de l'établissement (4)" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-soft">
+    <div class="container contact-grid">
+      <div class="contact-copy js-reveal">
+        <span class="kicker">Contacts</span>
+        <h2>Parlons de votre projet</h2>
+        <p>Envoyez-nous un message ou contactez-nous via téléphone / email.</p>
+
+        <div class="contact-box">
+          <div class="contact-item">
+            <span class="contact-label">Téléphone</span>
+            <span class="contact-value">+261 34 05 733 36</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a class="contact-link" href="mailto:enieni.uf@gmail.com">enieni.uf@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Réseaux</span>
+            <div class="social">
+              <a href="https://www.facebook.com/EcoleNationaleInformatiqueFianarantsoa" target="_blank" rel="noopener noreferrer" aria-label="Facebook ENI">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://eni.mg/" target="_blank" rel="noopener noreferrer" aria-label="Site web ENI">
+                <i class="fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form card js-reveal" id="contact-form">
+        <h3>Envoyez-nous un message</h3>
+
+        <label class="sr-only" for="contact-name">Votre nom</label>
+        <input id="contact-name" type="text" placeholder="Votre nom" autocomplete="name" required>
+
+        <label class="sr-only" for="contact-email">Votre email</label>
+        <input id="contact-email" type="email" placeholder="Votre email" autocomplete="email" required>
+
+        <label class="sr-only" for="contact-message">Votre message</label>
+        <textarea id="contact-message" rows="6" placeholder="Votre message" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Envoyer</button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/eni-logo.b647799890130ce38bc4.png" alt="Logo de l’ENI">
+          <span>ENI</span>
+        </div>
+        <p>Portfolio HTML/CSS — projet étudiant.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#about">À propos</a>
+        <a href="#features">Points forts</a>
+        <a href="#programs">Programmes</a>
+        <a href="#gallery">Galerie</a>
+      </div>
+      <div class="footer-col">
+        <h4>Liens</h4>
+        <a href="https://eni.mg/" target="_blank" rel="noopener noreferrer">Site officiel</a>
+        <a href="https://www.facebook.com/EcoleNationaleInformatiqueFianarantsoa" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:enieni.uf@gmail.com">enieni.uf@gmail.com</a>
+        <span class="muted">+261 34 05 733 36</span>
+      </div>
     </div>
 
-    <!-- Section bx-1 -->
-    
-    <section id="sec-bx-1">
-        <div class="bloc-1">
-            <div class="info-bx-1">
-                <div class="bloc-bx-1">
-                    <img src="images/eni-logo.b647799890130ce38bc4.png" alt="" class="logo-bx">
-                </div>
-                <div class="bloc-bx">
-                    <p>ECOLE <br> NATIONALE <br> DE L'INFORMATIQUE</p>
-                </div>
-            </div>
-            <div class="info-bx-2">
-                <p>Ecole Ingénieuse,<br>La Pépinière des Élites Informaticiennes.</p>
-                <div id="bx-btn">
-                    <button>En savoir plus</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container footer-bottom">
+      <p>Copyright © Herllandys Amoros Christy | L1 ENI-Toliara IG 2023-2024.</p>
+    </div>
+  </footer>
 
-    <!-- Section bx-2 -->
-
-    <section id="sec-bx-2">
-        <div class="bx-ms">
-            <p>MISSIONS & OBJECTIFS</p>
-        </div>
-        <div class="head-bx">
-            <div class="bx-ms-1">
-                <i class="fa-solid fa-briefcase"></i>
-                <p>Notre mission est de former une génération de professionnels de l'informatique créatifs et éthiques, prêts à exceller
-                dans un monde numérique en constante évolution.</p>
-            </div>
-            <div class="bx-ms-1">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <p>Nous nous engageons à contribuer au développement durable de Madagascar en offrant une éducation de qualité qui
-                transcende les frontières.</p>
-            </div>
-            <div class="bx-ms-1">
-                <i class="fa-solid fa-microchip"></i>
-                <p>Notre Objectif est d'être reconnus comme un centre d'excellence en informatique, formant des leaders influents dans
-                l'industrie technologique mondiale.</p>
-            </div>
-            <div class="bx-ms-1">
-                <i class="fa-solid fa-globe"></i>
-                <p>Nous aspirons à créer un environnement d'apprentissage dynamique et inclusif, favorisant l'innovation et contribuant au
-                progrès socio-économique de notre nation et du monde.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section bx-3 -->
-
-    <section id="sec-bx-3">
-        <div class="p-bx">
-            <p>PARTICULARITES</p>
-        </div>
-        <div class="p-info-bx">
-            <div class="bloc-bx-1">
-                <div class="info-bx-1">
-                    <h1>MENTION & PARCOURS</h1>
-                    <p>La formation en vue de l'obtention du diplôme de Licence Professionnelle en Informatique
-                        a été mise en place à l'<strong>ENI</strong> avec les <strong>quatre</strong> parcours de formation :
-                    </p>
-                    <ul>
-                        <li>Génie Logiciel et Base de Données.</li>
-                        <li>Administration des Système et Réseaux.</li>
-                        <li>Informatique Générale.</li>
-                        <li>IA : Intelligence Artificielle.</li>
-                    </ul>
-                </div>
-                <div class="info-bx-1">
-                    <h1>CENTRE DE FORMATION</h1>
-                    <label for="">
-                        <p>Il existe deux centres de formation qui peuvent étudiés à l'<strong>Université ENI</strong>.</p>
-                    </label><label for="">
-                        <p>La père est au siège de l'<strong>Université ENI</strong> à <strong>Fianarantsoa </strong>où se trouvent tous les <strong>Parcours</strong>. Et le second est à <strong>Toliara</strong> où il n'y a que des <strong>Parcours IG</strong>.</p>
-                    </label>
-                </div>
-            </div>
-            <div class="bloc-bx-2">
-                <div class="info-bx-1">
-                    <h1>METIERS ASSOCIES</h1>
-                    <p>Il existe de nombreux emplois qui peuvent être obtenus à partir
-                        de l'informatisation, et voici les travaux qui peuvent être effectués dans ce domaine informatique :
-                    </p>
-                    <ul>
-                        <li>Analyste développeur</li>
-                        <li>Analyste programmeur</li>
-                        <li>Concepteur d'application web et web mobile</li>
-                        <li>Concepteur développeur informatique</li>
-                        <li>Concepteur Développeur web</li>
-                        <li>Développeur d'application</li>
-                        <li>Ingénieur informaticien</li>
-                        <li>Programmeur informatique</li>
-                        <li>Administrateur Système et Réseaux</li>
-                    </ul>
-                </div>
-                <div class="info-bx-1">
-                    <h1>EVOLUTION DE CARRIERE</h1>
-                    <p>L'ingenieur Informaticien peut évoluer vers des postes tels que
-                        Chef de Projet, Architecte Logiciel, ou même Directeur Technique.
-                        Les Ingénieurs Informatiques évoluent généralement vers des poster d'encadrement
-                        pour devenir <strong>Responsable ou Directeur Informatique ou encore Directeur des Systèmes d'Information(DSI).</strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section bx-4 -->
-
-    <section id="sec-bx-4">
-        <div class="cont-bx">
-            <p>CONTACTS</p>
-        </div>
-        <div class="cont-info">
-            <div class="info-1">
-                <p>ENVOYEZ-NOUS UN MESSAGE</p>
-                <div class="com-bx">
-                    <input type="text" placeholder="Votre nom" class="name">
-                    <input type="text" placeholder="Votre email" class="email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Votre message" class="comment"></textarea>
-                    <button class="btn-bx">ENVOYER</button>
-                </div>
-            </div>
-            <div class="info-2">
-                <div class="call">
-                    <p>APPELEZ-NOUS AU</p>
-                    <span>+261 34 05 733 36</span>
-                </div>
-                <div class="email">
-                    <p>OU EMAIL</p>
-                    <a href="#">enieni.uf@gmail.com</a>
-                </div>
-                <div class="icon-bx">
-                    <p>OU RÉSEAUX SOCIAUX</p>
-                    <div class="list-ico">
-                        <a href="https://www.facebook.com/EcoleNationaleInformatiqueFianarantsoa"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://eni.mg/"><i class="fa fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Copyright -->
-    <section id="sec-bx-5">
-        <div class="copy">
-            <p>Copyright © Herllandys Amoros Christy & Mory Quéren Francia | L1 ENI-Toliara IG 2023-2024.</p>
-        </div>
-    </section>
-
-    <script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
+
+
